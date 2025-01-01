@@ -1,24 +1,27 @@
- document.addEventListener('DOMContentLoaded', () => {
-   const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
-   const navMenu = document.getElementById('nav-menu');
+ document.addEventListener('DOMContentLoaded', function() {
+     const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+     const navMenu = document.getElementById('nav-menu');
  
-   // Toggle mobile menu
-   mobileMenuToggle.addEventListener('click', (e) => {
-     e.stopPropagation();
-     navMenu.classList.toggle('hidden');
-   });
+     mobileMenuToggle.addEventListener('click', function() {
+         navMenu.classList.toggle('-translate-x-full');
+         // Optional: Toggle menu icon
+         this.classList.toggle('active');
+     });
  
-   // Close menu when clicking outside
-   document.addEventListener('click', (event) => {
-     if (!navMenu.contains(event.target) && !mobileMenuToggle.contains(event.target)) {
-       navMenu.classList.add('hidden');
-     }
-   });
+     // Close mobile menu when clicking outside
+     document.addEventListener('click', function(event) {
+         if (!navMenu.contains(event.target) && !mobileMenuToggle.contains(event.target)) {
+             navMenu.classList.add('-translate-x-full');
+             mobileMenuToggle.classList.remove('active');
+         }
+     });
  
-   // Ensure menu visibility on larger screens
-   window.addEventListener('resize', () => {
-     if (window.innerWidth >= 640) {
-       navMenu.classList.remove('hidden');
-     }
-   });
+     // Close mobile menu when a link is clicked
+     const navLinks = navMenu.querySelectorAll('a');
+     navLinks.forEach(link => {
+         link.addEventListener('click', function() {
+             navMenu.classList.add('-translate-x-full');
+             mobileMenuToggle.classList.remove('active');
+         });
+     });
  });

@@ -9,30 +9,40 @@
   <title>Kid Parks</title>
 </head>
 <body class="bg-white scroll-smooth scroll-m-1">
- <!-- Nav bar  -->
- <nav class="bg-[#0295A9] relative">
-   <div class="flex justify-between items-center p-4">
-     <img src="./img-s/KIDS PARK (2).png" width="50%" height="100%" alt="logo" class="logo sm:w-[200px]">
-     
-     <!-- Mobile menu toggle -->
-     <button id="mobile-menu-toggle" class="sm:hidden">
-       <i class="fa fa-bars text-2xl text-white"></i>
-     </button>
- 
-     <!-- Navigation menu -->
-     <ul id="nav-menu" class="hidden sm:flex space-x-4 items-center">
-       <li><a href="#home" class="text-white hover:text-gray-200">Home</a></li>
-       <li><a href="#programs" class="text-white hover:text-gray-200">Program</a></li>
-       <li><a href="#why" class="text-white hover:text-gray-200">Why Us</a></li>
-       <li><a href="#about" class="text-white hover:text-gray-200">About Us</a></li>
-       <li>
-         <button id="btn" type="button" class="bg-[#036370] rounded-[30px] px-4 py-2 text-white shadow-xl">
-           <a href="#contact">Contact Us</a>
-         </button>
-       </li>
-     </ul>
-   </div>
- </nav>
+
+  <!-- Nav bar  -->
+  <nav class="bg-[#0295A9] relative">
+    <div class="flex justify-between items-center p-4">
+      <img src="./img-s/KIDS PARK (2).png" width="50%" height="100%" alt="logo" class="logo sm:w-[200px]">
+      
+      <!-- Mobile menu toggle -->
+      <button id="mobile-menu-toggle" class="sm:hidden z-50 relative">
+        <i class="fa fa-bars text-2xl text-white"></i>
+      </button>
+  
+      <!-- Navigation menu -->
+      <ul id="nav-menu" class="
+        fixed top-0 left-0 w-[80%] h-full 
+        bg-[#0295A9] 
+        transform transition-transform duration-300 ease-in-out 
+        flex flex-col items-start justify-center 
+        space-y-6 p-8 
+        -translate-x-full 
+        sm:translate-x-0 
+        sm:flex sm:static sm:w-auto sm:h-auto sm:flex-row sm:space-x-4 sm:space-y-0 sm:p-0 sm:items-center
+      ">
+        <li class="w-full sm:w-auto"><a href="#home" class="text-white hover:text-gray-200 block sm:inline">Home</a></li>
+        <li class="w-full sm:w-auto"><a href="#programs" class="text-white hover:text-gray-200 block sm:inline">Program</a></li>
+        <li class="w-full sm:w-auto"><a href="#why" class="text-white hover:text-gray-200 block sm:inline">Why Us</a></li>
+        <li class="w-full sm:w-auto"><a href="#about" class="text-white hover:text-gray-200 block sm:inline">About Us</a></li>
+        <li class="w-full sm:w-auto">
+          <button id="btn" type="button" class="bg-[#036370] rounded-[30px] px-4 py-2 text-white shadow-xl w-full sm:w-auto">
+            <a href="#contact">Contact Us</a>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
 <!-- main -->
 <main class="container mx-auto px-4 mt-16 md:mt-24">
