@@ -9,129 +9,198 @@
   <title>Kid Parks</title>
 </head>
 <body class="bg-white scroll-smooth scroll-m-1">
-  <!-- Nav bar  -->
-    <nav class="bg-[#0295A9] flex justify-around align-middle sticky top-0 overflow-hidden topnav sm:" id="navlist">
-      <ul class="flex align-middle justify-between gap-4 mt-5 font-mono">
-        <li><a href="#home" class="active">Home</a></li>
-        <li id="programe" class="programe"><a href="#programs">Program</a></li>
-        <li id="why" class="why"><a href="#why">Why Us</a></li>
-        <li id="about" class="about"><a href="#about">About Us</a></li>
-      </ul>
-      <div class="flex align-middle font-mono gap-4 justify-evenly">
-        <img src="./img-s/KIDS PARK (2).png" width="50%" height="100%" alt="logo" class="logo"> 
-        <button id="btn" type="button" class="mt-3 bg-[#036370] rounded-[30px] top-0 bottom-0 pl-3 pr-3 mb-1 text-white shadow-xl border-2"><a href="#contact">Contact Us</a></button>
-      </div>
-      <a href="javascript:void(0);" class="icon hidden" onclick="myFunction()">
-        <i class="fa fa-bars"></i> </a>
-    </nav>
-    <!-- nav-bar end -->
+ <!-- Nav bar  -->
+ <nav class="bg-[#0295A9] relative">
+   <div class="flex justify-between items-center p-4">
+     <img src="./img-s/KIDS PARK (2).png" width="50%" height="100%" alt="logo" class="logo sm:w-[200px]">
+     
+     <!-- Mobile menu toggle -->
+     <button id="mobile-menu-toggle" class="sm:hidden">
+       <i class="fa fa-bars text-2xl text-white"></i>
+     </button>
+ 
+     <!-- Navigation menu -->
+     <ul id="nav-menu" class="hidden sm:flex space-x-4 items-center">
+       <li><a href="#home" class="text-white hover:text-gray-200">Home</a></li>
+       <li><a href="#programs" class="text-white hover:text-gray-200">Program</a></li>
+       <li><a href="#why" class="text-white hover:text-gray-200">Why Us</a></li>
+       <li><a href="#about" class="text-white hover:text-gray-200">About Us</a></li>
+       <li>
+         <button id="btn" type="button" class="bg-[#036370] rounded-[30px] px-4 py-2 text-white shadow-xl">
+           <a href="#contact">Contact Us</a>
+         </button>
+       </li>
+     </ul>
+   </div>
+ </nav>
 
-    <!-- main -->
-      <main class="mt-[100px] flex align-middle justify-around">
-        <div class="main">
-          <h1 class="text-[45px] font-[poppins] font-extrabold text-[#04162F]">A Brighter <br> Future For <br> your kids</h1>
-          <p class="font-[] font-semibold text-[#04162F] mb-10 mt-5">We offer high quality Daycare Services for your kids, <br> contact us or visit us today for more information</p>
-          <button type="button" class="bg-[#E74C3C] mr-4 p-2 rounded-lg text-[18px] pl-5 pr-5 shadow-lg text-white">Get Started</button>
-          <button type="button" class="bg-[white] text-[18px] shadow-md border border-blue-300 p-2 ml-4 rounded-lg text-[#04162F]">Why Us ?</button>
-        </div>
-        <div class=" bg-yellow-500 border-4 border-yellow-200 absolute p-10 ml-[600px] mt-[200px] rounded-[10px] shadow-2xl image-2">
-          <div class="align-middle justify-center ml-4">
-            <svg xmlns="http://www.w3.org/2000/svg" class="ml-7 text-[25px] mb-2" width="1em" height="1em" viewBox="0 0 36 36"><path fill="#ffac33" d="M23.111 2.081c-2.638-.853-8.844-.621-10.395 1.396c-4.034.078-8.766 3.724-9.387 8.534c-.614 4.76.754 6.971 1.241 10.551c.552 4.056 2.832 5.353 4.655 5.896c2.623 3.465 5.411 3.317 10.092 3.317c9.141 0 13.495-6.116 13.88-16.505c.232-6.284-3.454-11.043-10.086-13.189"/><path fill="#ffdc5d" d="M28.339 15.713c-.884-1.225-2.017-2.211-4.499-2.56c.931.427 1.823 1.901 1.939 2.715c.116.815.233 1.474-.504.659c-2.952-3.263-6.167-1.978-9.354-3.972c-2.226-1.392-2.903-2.933-2.903-2.933s-.272 2.056-3.646 4.15c-.978.607-2.145 1.959-2.793 3.956c-.465 1.435-.321 2.715-.321 4.903c0 6.385 5.262 11.753 11.753 11.753s11.753-5.415 11.753-11.753c0-3.97-.416-5.521-1.425-6.918"/><path fill="#c1694f" d="M18 31c-2.347 0-3.575-1.16-3.707-1.293a.999.999 0 0 1 1.404-1.424c.051.047.806.717 2.303.717c1.519 0 2.273-.69 2.305-.719a1.01 1.01 0 0 1 1.408.029a.994.994 0 0 1-.006 1.397C21.575 29.84 20.347 31 18 31m1-5h-2a1 1 0 1 1 0-2h2a1 1 0 1 1 0 2"/><path fill="#662113" d="M13 22a1 1 0 0 1-1-1v-2a1 1 0 0 1 2 0v2a1 1 0 0 1-1 1m10 0a1 1 0 0 1-1-1v-2a1 1 0 1 1 2 0v2a1 1 0 0 1-1 1"/></svg>
-            <p class="ml-5">3468</p>
-            <p class="ml-3 text-green-700 font-bold text-[10px] mb-2">Total students</p>
-            <button type="button" class=" bg-blue-600 p-3 rounded-full shadow-xl shadow-red-500">Get started</button>
-          </div>
-        </div>
-        <div class="grid grid-cols-2 gap-1 image">
-          <div><img class="shadow-2xl" src="./img-s/Rectangle 700.png" alt=""></div>
-          <div><img src="./img-s/Rectangle 698 (1).png" alt=""></div>
-          <div><img class="shadow-sm rounded" src="./img-s/Rectangle 699 (1).png" alt=""></div>
-          <div><img src="./img-s/Rectangle 701.png" alt=""></div>
-        </div>
-      </main>
-<!-- main end -->
+<!-- main -->
+<main class="container mx-auto px-4 mt-16 md:mt-24">
+  <div class="flex flex-col-reverse md:flex-row items-center justify-between space-y-8 md:space-y-0 md:space-x-12">
+    <!-- Text Content -->
+    <div class="w-full md:w-1/2 text-center md:text-left">
+      <h1 class="text-4xl md:text-5xl font-bold text-[#0295A9] mb-6 leading-tight">
+        Discover Fun and Learning at Kid Parks
+      </h1>
+      <p class="text-lg text-gray-700 mb-8 leading-relaxed">
+        Engaging programs designed to spark creativity, build confidence, and create unforgettable memories for your children.
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+        <a href="#programs" class="bg-[#036370] text-white px-6 py-3 rounded-full hover:bg-opacity-90 transition duration-300 text-center">
+          Explore Programs
+        </a>
+        <a href="#contact" class="border-2 border-[#0295A9] text-[#0295A9] px-6 py-3 rounded-full hover:bg-[#0295A9] hover:text-white transition duration-300 text-center">
+          Contact Us
+        </a>
+      </div>
+    </div>
+    
+    <!-- Image Content -->
+    <div class="w-full md:w-1/2 mb-8 md:mb-0">
+      <div class="aspect-w-16 aspect-h-9">
+        <img 
+          src="./img-s/Rectangle 614.png" 
+          alt="Kids Playing" 
+          class="w-full h-full object-cover rounded-lg shadow-lg"
+        >
+      </div>
+    </div>
+  </div>
+</main>
 
 <!-- section Values -->
-
-<section class="mt-[10%]" id="about">
-  <div class="text-center font-sans">
-    <h1 class="text-[40px]">Our Core Values</h1>
-    <p class="shadow-sm offer">We offer high quality Daycare Services for your kids, contact us <br> or visit us today for more information</p>
+<section class="container mx-auto px-4 py-16 md:py-24">
+  <div class="text-center mb-12">
+    <h2 class="text-3xl md:text-4xl font-bold text-[#0295A9] mb-4">
+      Our Core Values
+    </h2>
+    <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+      At Kid Parks, we are committed to providing a nurturing environment that supports the holistic development of your children.
+    </p>
   </div>
-  <div class="flex align-middle justify-around mt-7">
-  <div class="flex bg-[#FFBB12] pt-2 pb-1 pl-6 pr-6 rounded-[20px] text-center text-[15px] gap-2 shadow-2xl border border-yellow-100 super">
-    <p><svg class="text-3xl bg-white rounded-xl" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 72 72"><circle cx="35.473" cy="36.168" r="18.068" fill="#fff"/><path fill="#d0cfce" d="m54.998 12.297l-19.514 28.2l-10.572-10.232v5.031l10.955 10.743l19.131-27.752z"/><g fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M52.084 28.991A17.9 17.9 0 0 1 53.5 36c0 9.941-8.059 18-18 18s-18-8.059-18-18s8.059-18 18-18c3.267 0 6.33.87 8.971 2.392"/><path d="M54.574 12.771L35.5 40.333l-10.333-10v4.917l10.708 10.5l18.699-27.125z"/></g></svg</p>
-    <p>Licensed Child <br> Care</p>
-  </div>
-  <div class="flex bg-[#FFBB12]  pt-2 pb-1 pl-6 pr-6 rounded-[20px] text-center text-[15px] gap-2 shadow-2xl border border-yellow-100 super-2">
-    <p><svg class="text-3xl bg-white rounded-xl" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 72 72"><circle cx="35.473" cy="36.168" r="18.068" fill="#fff"/><path fill="#d0cfce" d="m54.998 12.297l-19.514 28.2l-10.572-10.232v5.031l10.955 10.743l19.131-27.752z"/><g fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M52.084 28.991A17.9 17.9 0 0 1 53.5 36c0 9.941-8.059 18-18 18s-18-8.059-18-18s8.059-18 18-18c3.267 0 6.33.87 8.971 2.392"/><path d="M54.574 12.771L35.5 40.333l-10.333-10v4.917l10.708 10.5l18.699-27.125z"/></g></svg</p>
-    <p>High Quality <br> Learning</p>
-  </div>
-  <div class="flex bg-[#FFBB12]  pt-2 pb-1 pl-6 pr-6 rounded-[20px] text-center text-[15px] gap-2 shadow-2xl border border-yellow-100 super-3">
-    <p><svg class="text-3xl bg-white rounded-xl" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 72 72"><circle cx="35.473" cy="36.168" r="18.068" fill="#fff"/><path fill="#d0cfce" d="m54.998 12.297l-19.514 28.2l-10.572-10.232v5.031l10.955 10.743l19.131-27.752z"/><g fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M52.084 28.991A17.9 17.9 0 0 1 53.5 36c0 9.941-8.059 18-18 18s-18-8.059-18-18s8.059-18 18-18c3.267 0 6.33.87 8.971 2.392"/><path d="M54.574 12.771L35.5 40.333l-10.333-10v4.917l10.708 10.5l18.699-27.125z"/></g></svg</p>
-    <p>Super Talented <br> Staffs</p>
-  </div>
+  
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-xl transition duration-300">
+      <div class="mb-4 flex justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-[#036370]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+        </svg>
+      </div>
+      <h3 class="text-xl font-semibold text-[#04162F] mb-3">Safety First</h3>
+      <p class="text-gray-600">
+        We prioritize the safety and well-being of every child in our care.
+      </p>
+    </div>
+    
+    <div class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-xl transition duration-300">
+      <div class="mb-4 flex justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-[#036370]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+        </svg>
+      </div>
+      <h3 class="text-xl font-semibold text-[#04162F] mb-3">Experienced Staff</h3>
+      <p class="text-gray-600">
+        Our dedicated team of professionals ensures quality care and education.
+      </p>
+    </div>
+    
+    <div class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-xl transition duration-300">
+      <div class="mb-4 flex justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-[#036370]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </div>
+      <h3 class="text-xl font-semibold text-[#04162F] mb-3">Holistic Development</h3>
+      <p class="text-gray-600">
+        We focus on nurturing cognitive, social, and emotional growth.
+      </p>
+    </div>
   </div>
 </section>
 
-<!-- section Values end-->
-
-<!-- System -->
-
-<section class="mt-[7%] mb-16">
-  <div class="text-center">
-    <h1 class="text-[#21C1D7] text-5xl mb-7" id="programs">Our Smarty Program</h1>
-    <button type="button" class="bg-[#E74C3C] p-2 text-white rounded-2xl mb-5 border-s-4 border-yellow-300 shadow-xl">Get started</button>
+<!-- System Section -->
+<section class="container mx-auto px-4 py-16 md:py-24 bg-gray-50" id="programs">
+  <div class="text-center mb-12">
+    <h2 class="text-3xl md:text-4xl font-bold text-[#0295A9] mb-4">
+      Our Program System
+    </h2>
+    <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+      Discover our comprehensive approach to early childhood education and care.
+    </p>
   </div>
-  <div class="flex justify-around">
-    <div class="text-center">
-      <img src="./img-s/Rectangle 612.png" alt="" class="">
-      <p class="mt-3 text-[#04162F] text-lg font-bold">Preschool (2-3 years)</p>
+  
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+      <div class="mb-4 flex justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-[#036370]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+        </svg>
+      </div>
+      <h3 class="text-xl font-semibold text-[#04162F] mb-3">Curriculum</h3>
+      <p class="text-gray-600 mb-4">
+        Engaging, age-appropriate learning programs designed to foster curiosity and creativity.
+      </p>
+      <a href="#" class="text-[#036370] hover:underline">Learn More</a>
     </div>
-    <div class="text-center">
-      <img src="./img-s/Rectangle 613.png" alt="">
-      <p class="mt-3 text-[#04162F] text-lg font-bold">Kindergarten (3-5 years)</p>
+    
+    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+      <div class="mb-4 flex justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-[#036370]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" />
+        </svg>
+      </div>
+      <h3 class="text-xl font-semibold text-[#04162F] mb-3">Age Groups</h3>
+      <p class="text-gray-600 mb-4">
+        Tailored programs for different age groups, from toddlers to preschoolers.
+      </p>
+      <a href="#" class="text-[#036370] hover:underline">View Groups</a>
     </div>
-    <div class="text-center">
-      <img class="" src="./img-s/Rectangle 614.png" alt="">
-      <p class="mt-3 text-[#04162F] text-lg font-bold">Pr-k For All (6 years)</p>
+    
+    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+      <div class="mb-4 flex justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-[#036370]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+        </svg>
+      </div>
+      <h3 class="text-xl font-semibold text-[#04162F] mb-3">Learning Approach</h3>
+      <p class="text-gray-600 mb-4">
+        Innovative teaching methods that promote active learning and critical thinking.
+      </p>
+      <a href="#" class="text-[#036370] hover:underline">Explore Approach</a>
     </div>
   </div>
 </section>
-
-<!-- System end -->
 
 <!-- future -->
-
-<section class="mt-[8%] mb-[6%]">
-  <div class="flex justify-around">
-    <h1 class="text-[#04162F] text-5xl">A Brighter Future For <br> Your Kids</h1>
-    <p class="text-[#04162F]">We offer high quality Daycare Services for your kids, <br> contact us or visit us today for more information  <span class="text-amber-500 text-4xl">.</span></p>
+<section class="container mx-auto px-4 mt-[8%] mb-[6%]">
+  <div class="flex flex-col md:flex-row justify-around items-center space-y-4 md:space-y-0">
+    <h1 class="text-[#04162F] text-2xl md:text-5xl text-center md:text-left">A Brighter Future For <br> Your Kids</h1>
+    <p class="text-[#04162F] text-center md:text-left">We offer high quality Daycare Services for your kids, <br> contact us or visit us today for more information  <span class="text-amber-500 text-4xl">.</span></p>
   </div>
-  <div class="flex justify-around mt-20">
-    <div class="flex gap-3">
-      <svg class="text-[#4583DA] font-extrabold text-2xl mt-3" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M19 4h-2V3a1 1 0 0 0-2 0v1H9V3a1 1 0 0 0-2 0v1H5a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3m1 15a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-7h16Zm0-9H4V7a1 1 0 0 1 1-1h2v1a1 1 0 0 0 2 0V6h6v1a1 1 0 0 0 2 0V6h2a1 1 0 0 1 1 1Z"/></svg>
+  <div class="flex flex-col md:flex-row justify-around mt-10 md:mt-20 space-y-4 md:space-y-0">
+    <div class="flex gap-3 items-center justify-center">
+      <svg class="text-[#4583DA] font-extrabold text-2xl" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M19 4h-2V3a1 1 0 0 0-2 0v1H9V3a1 1 0 0 0-2 0v1H5a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3m1 15a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-7h16Zm0-9H4V7a1 1 0 0 1 1-1h2v1a1 1 0 0 0 2 0V6h6v1a1 1 0 0 0 2 0V6h2a1 1 0 0 1 1 1Z"/></svg>
       <div>
         <p class="text-green-500 font-bold">12</p>
         <p class="text-[#04162F]">Years Experience</p>
       </div>
     </div>
-    <div class="flex gap-3">
-      <svg class="text-[#FFA800] font-extrabold text-2xl mt-3" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M7.21 15L2.66 7.14a2 2 0 0 1 .13-2.2L4.4 2.8A2 2 0 0 1 6 2h12a2 2 0 0 1 1.6.8l1.6 2.14a2 2 0 0 1 .14 2.2L16.79 15M11 12L5.12 2.2M13 12l5.88-9.8M8 7h8"/><circle cx="12" cy="17" r="5"/><path d="M12 18v-2h-.5"/></g></svg>
+    <div class="flex gap-3 items-center justify-center">
+      <svg class="text-[#FFA800] font-extrabold text-2xl" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M7.21 15L2.66 7.14a2 2 0 0 1 .13-2.2L4.4 2.8A2 2 0 0 1 6 2h12a2 2 0 0 1 1.6.8l1.6 2.14a2 2 0 0 1 .14 2.2L16.79 15M11 12L5.12 2.2M13 12l5.88-9.8M8 7h8"/><circle cx="12" cy="17" r="5"/><path d="M12 18v-2h-.5"/></g></svg>
       <div>
         <p class="text-green-500 font-bold">4235</p>
         <p class="text-[#04162F]">Total Achievment</p>
       </div>
     </div>
-    <div class="flex gap-3">
-      <svg class="text-[#F160E3] font-extrabold text-2xl mt-3" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 32 32"><path fill="currentColor" d="M18 30h-4a2 2 0 0 1-2-2v-7a2 2 0 0 1-2-2v-6a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3v6a2 2 0 0 1-2 2v7a2 2 0 0 1-2 2m-5-18a.94.94 0 0 0-1 1v6h2v9h4v-9h2v-6a.94.94 0 0 0-1-1zm3-3a4 4 0 1 1 4-4a4 4 0 0 1-4 4m0-6a2 2 0 1 0 2 2a2 2 0 0 0-2-2"/></svg>
+    <div class="flex gap-3 items-center justify-center">
+      <svg class="text-[#F160E3] font-extrabold text-2xl" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 32 32"><path fill="currentColor" d="M18 30h-4a2 2 0 0 1-2-2v-7a2 2 0 0 1-2-2v-6a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3v6a2 2 0 0 1-2 2v7a2 2 0 0 1-2 2m-5-18a.94.94 0 0 0-1 1v6h2v9h4v-9h2v-6a.94.94 0 0 0-1-1zm3-3a4 4 0 1 1 4-4a4 4 0 0 1-4 4m0-6a2 2 0 1 0 2 2a2 2 0 0 0-2-2"/></svg>
       <div>
         <p class="text-green-500 font-bold">3468</p>
         <p class="text-[#04162F]">Happy Students</p>
       </div>
     </div>
-    <div class="flex gap-3">
-      <svg class="text-[#FB0000] font-extrabold text-2xl mt-3" xmlns="http://www.w3.org/2000/svg" width="1.25em" height="1em" viewBox="0 0 640 512"><path fill="currentColor" d="M353.8 54.1L330.2 6.3c-3.9-8.3-16.1-8.6-20.4 0l-23.6 47.8l-52.3 7.5c-9.3 1.4-13.3 12.9-6.4 19.8l38 37l-9 52.1c-1.4 9.3 8.2 16.5 16.8 12.2l46.9-24.8l46.6 24.4c8.6 4.3 18.3-2.9 16.8-12.2l-9-52.1l38-36.6c6.8-6.8 2.9-18.3-6.4-19.8l-52.3-7.5zM256 256c-17.7 0-32 14.3-32 32v192c0 17.7 14.3 32 32 32h128c17.7 0 32-14.3 32-32V288c0-17.7-14.3-32-32-32zM32 320c-17.7 0-32 14.3-32 32v128c0 17.7 14.3 32 32 32h128c17.7 0 32-14.3 32-32V352c0-17.7-14.3-32-32-32zm416 96v64c0 17.7 14.3 32 32 32h128c17.7 0 32-14.3 32-32v-64c0-17.7-14.3-32-32-32H480c-17.7 0-32 14.3-32 32"/></svg>
+    <div class="flex gap-3 items-center justify-center">
+      <svg class="text-[#FB0000] font-extrabold text-2xl" xmlns="http://www.w3.org/2000/svg" width="1.25em" height="1em" viewBox="0 0 640 512"><path fill="currentColor" d="M353.8 54.1L330.2 6.3c-3.9-8.3-16.1-8.6-20.4 0l-23.6 47.8l-52.3 7.5c-9.3 1.4-13.3 12.9-6.4 19.8l38 37l-9 52.1c-1.4 9.3 8.2 16.5 16.8 12.2l46.9-24.8l46.6 24.4c8.6 4.3 18.3-2.9 16.8-12.2l-9-52.1l38-36.6c6.8-6.8 2.9-18.3-6.4-19.8l-52.3-7.5zM256 256c-17.7 0-32 14.3-32 32v192c0 17.7 14.3 32 32 32h128c17.7 0 32-14.3 32-32V288c0-17.7-14.3-32-32-32zM32 320c-17.7 0-32 14.3-32 32v128c0 17.7 14.3 32 32 32h128c17.7 0 32-14.3 32-32V352c0-17.7-14.3-32-32-32zm416 96v64c0 17.7 14.3 32 32 32h128c17.7 0 32-14.3 32-32v-64c0-17.7-14.3-32-32-32H480c-17.7 0-32 14.3-32 32"/></svg>
       <div>
         <p class="text-green-500 font-bold">3k+</p>
         <p class="text-[#04162F]">Positive Review</p>
@@ -140,152 +209,172 @@
   </div>
 </section>
 
-<!-- future end -->
-
 <!-- Guiding -->
-<section class="mt-[10%] mb-[9%]">
-  <div>
-    <div class="bg-[#04162F] p-1 shadow-3xl w-[70%] h-[10%]">
-      <img src="./img-s/Rectangle 699.png" class="absolute mt-[280px] ml-[380px]" alt="">
+<section class="container mx-auto px-4 mt-[10%] mb-[9%]">
+  <div class="relative">
+    <div class="bg-[#04162F] p-1 shadow-3xl w-full md:w-[70%] h-auto md:h-[10%] mb-8 md:mb-0">
+      <img src="./img-s/Rectangle 699.png" class="hidden md:block absolute mt-[280px] ml-[380px] w-auto" alt="">
     </div>
-    <div class="flex justify-around items-center">
-      <img src="./img-s/Rectangle 698.png" alt="">
-      <div>
-      <h1 class="text-[#4583DA] text-4xl mb-5">Guiding Your Kids <br> To Be Success <br> Generation.</h1>
-      <p class="text-[#04162F] text-[17px]">We offer high quality Daycare Services <br> for your kids, contact us or visit us today <br>for more information</p>
-      <div class="flex items-center gap-6 mt-7">
-      <button type="button" class="p-3  bg-black rounded-full text-white border-e-4 border-slate-500 pl-6 pr-6 shadow-2xl">About Us</button>
-      <p class="text-[#F80505] font-bold">Call us: <span class="text-[#04162F]">+234 8135100235</span></p>
+    <div class="flex flex-col md:flex-row justify-around items-center space-y-8 md:space-y-0">
+      <div class="w-full md:w-auto">
+        <img src="./img-s/Rectangle 698.png" alt="" class="w-full md:w-auto">
       </div>
+      <div class="text-center md:text-left w-full md:w-auto">
+        <h1 class="text-[#4583DA] text-2xl md:text-4xl mb-5">Guiding Your Kids <br> To Be Success <br> Generation.</h1>
+        <p class="text-[#04162F] text-base md:text-[17px] mb-6">
+          We offer high quality Daycare Services <br> for your kids, contact us or visit us today <br>for more information
+        </p>
+        <div class="flex flex-col sm:flex-row items-center gap-6 mt-7 justify-center md:justify-start">
+          <button type="button" class="p-3 bg-black rounded-full text-white border-e-4 border-slate-500 pl-6 pr-6 shadow-2xl">
+            About Us
+          </button>
+          <p class="text-[#F80505] font-bold text-center md:text-left">
+            Call us: <span class="text-[#04162F]">+234 8135100235</span>
+          </p>
+        </div>
       </div>
     </div>
   </div>
 </section>
-<!-- Guiding end -->
 
 <!-- Talented -->
-<section class="mt-[12%]">
-  <h1 class="text-center mt-11 mb-12 underline underline-offset-4 text-[#04162F] text-4xl">Our Talented Teachers</h1>
-  <div class="flex items-center justify-around">
+<section class="container mx-auto px-4 mt-[12%]">
+  <h1 class="text-center mt-11 mb-12 underline underline-offset-4 text-[#04162F] text-2xl md:text-4xl">
+    Our Talented Teachers
+  </h1>
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-6 items-center justify-center">
     <div class="text-center text-[#04162F]">
-      <img src="./img-s/Ellipse 44.png" alt="image-teacher">
+      <img src="./img-s/Ellipse 44.png" alt="image-teacher" class="mx-auto w-full max-w-[200px]">
       <p class="mt-5 font-semibold">Warso Setyo</p>
       <p>Headmaster</p>
     </div>
     <div class="text-center text-[#04162F]">
-      <img src="./img-s/Ellipse 45.png" alt="image-teacher">
+      <img src="./img-s/Ellipse 45.png" alt="image-teacher" class="mx-auto w-full max-w-[200px]">
       <p class="mt-5 font-semibold">Retno Hadi</p>
       <p>Math Teacher</p>
     </div>
     <div class="text-center text-[#04162F]">
-      <img src="./img-s/Ellipse 46.png" alt="image-teacher">
+      <img src="./img-s/Ellipse 46.png" alt="image-teacher" class="mx-auto w-full max-w-[200px]">
       <p class="mt-5 font-semibold">Nursholaha</p>
       <p>English Teacher</p>
     </div>
     <div class="text-center text-[#04162F]">
-      <img src="./img-s/Ellipse 47.png" alt="image-teacher">
+      <img src="./img-s/Ellipse 47.png" alt="image-teacher" class="mx-auto w-full max-w-[200px]">
       <p class="mt-5 font-semibold">Zubaidah</p>
       <p>Art Teacher</p>
     </div>
   </div>
 </section>
 
-<!-- Talented end-->
-
 <!-- contact -->
-
-<section class="mt-[12%] mb-[8%]">
-  <div class="flex items-center justify-around gap-8">
-    <div class="ml-[23%]">
-      <h1 class="text-[#04162F] text-4xl font-semibold font-mono mb-4">Lets talk with <br> our awesome <br> team</h1>
-      <p class="text-[#04162F] font-thin mb-3">We offer high quality Daycare Services for your <br> kids, contact us or visit us today for more <br> information</p>
-      <div class="flex items-center gap-3">
-        <p><svg class="text-3xl text-[#35E13C]" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path stroke-dasharray="64" stroke-dashoffset="64" d="M8 3c0.5 0 2.5 4.5 2.5 5c0 1 -1.5 2 -2 3c-0.5 1 0.5 2 1.5 3c0.39 0.39 2 2 3 1.5c1 -0.5 2 -2 3 -2c0.5 0 5 2 5 2.5c0 2 -1.5 3.5 -3 4c-1.5 0.5 -2.5 0.5 -4.5 0c-2 -0.5 -3.5 -1 -6 -3.5c-2.5 -2.5 -3 -4 -3.5 -6c-0.5 -2 -0.5 -3 0 -4.5c0.5 -1.5 2 -3 4 -3Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="64;0"/></path><path stroke-dasharray="8" stroke-dashoffset="8" d="M20 4l-4 4"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.7s" dur="0.2s" values="8;0"/></path><path stroke-dasharray="6" stroke-dashoffset="6" d="M16 8h4M16 8v-4"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.9s" dur="0.2s" values="6;0"/></path></g></svg></p>
-        <div>
-          <p class="text-[#04162F] font-thin">Call</p>
-          <p class="text-[#04162F] font-thin">+234 8135100235</p>
-        </div>
-      </div>
-      <div class="flex items-center gap-3 mt-4">
-        <p><svg class="text-3xl text-[#FC1414]" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4"><path d="M44 24v16.818C44 42.023 43.105 43 42 43H6c-1.105 0-2-.977-2-2.182V24l20 13z"/><path stroke-linecap="round" d="m4 23.784l10-6.892m30 6.892l-10-6.892"/><path d="M34 5H14v24.415a2 2 0 0 0 .91 1.677l8 5.2a2 2 0 0 0 2.18 0l8-5.2a2 2 0 0 0 .91-1.677z"/><path stroke-linecap="round" d="M20 13h4m-4 6h8"/></g></svg></p>
-        <div>
-          <p class="text-[#04162F] font-thin">Email</p>
-          <p class="text-[#04162F] font-thin">abbasyim1@gmail.com</p>
-        </div>
-      </div>
-      <div class="flex items-center gap-3 mt-4">
-        <p><svg class="text-3xl text-[#4583DA] xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18.5L9 17l-6 3V7l6-3l6 3l6-3v7.5M9 4v13m6-10v5.5m6.121 7.621a3 3 0 1 0-4.242 0Q17.506 20.749 19 22q1.577-1.335 2.121-1.879M19 18v.01"/></svg></p>
-        <div>
-          <p class="text-[#04162F] font-thin">Location</p>
-          <p class="text-[#04162F] font-thin">Bangalore, India</p>
-        </div>
-      </div>
-      </div>
-      <div class="max-w-[50%] mx-auto p-4 bg-white rounded-md shadow-md">
-        <form id="contact">
-          <div class="mb-4">
-            <label class="block text-gray-700 text-sm font-bold mb-2" for="name">Name:</label>
-            <div class="flex items-center gap-3 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
-              <p><svg class="text-blue-200" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 12 12"><path fill="currentColor" d="M6 1a2 2 0 1 0 0 4a2 2 0 0 0 0-4M5 3a1 1 0 1 1 2 0a1 1 0 0 1-2 0m3.5 3h-5A1.5 1.5 0 0 0 2 7.5c0 1.116.459 2.01 1.212 2.615C3.953 10.71 4.947 11 6 11s2.047-.29 2.788-.885C9.54 9.51 10 8.616 10 7.5A1.5 1.5 0 0 0 8.5 6m-5 1h5a.5.5 0 0 1 .5.5c0 .817-.325 1.423-.838 1.835C7.636 9.757 6.88 10 6 10s-1.636-.243-2.162-.665C3.325 8.923 3 8.317 3 7.5a.5.5 0 0 1 .5-.5"/></svg></p>
-              <input class="" id="email" type="email" placeholder="your name">
-              </div>
+<section class="container mx-auto px-4 mt-[12%] mb-[8%]">
+  <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+    <div class="w-full md:w-1/2 text-center md:text-left">
+      <h1 class="text-[#04162F] text-2xl md:text-4xl font-semibold font-mono mb-4">
+        Lets talk with <br> our awesome <br> team
+      </h1>
+      <p class="text-[#04162F] font-thin mb-3">
+        We offer high quality Daycare Services for your <br> kids, contact us or visit us today for more <br> information
+      </p>
+      
+      <div class="space-y-4">
+        <div class="flex items-center gap-3 justify-center md:justify-start">
+          <p><svg class="text-3xl text-[#35E13C]" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path stroke-dasharray="64" stroke-dashoffset="64" d="M8 3c0.5 0 2.5 4.5 2.5 5c0 1 -1.5 2 -2 3c-0.5 1 0.5 2 1.5 3c0.39 0.39 2 2 3 1.5c1 -0.5 2 -2 3 -2c0.5 0 5 2 5 2.5c0 2 -1.5 3.5 -3 4c-1.5 0.5 -2.5 0.5 -4.5 0c-2 -0.5 -3.5 -1 -6 -3.5c-2.5 -2.5 -3 -4 -3.5 -6c-0.5 -2 -0.5 -3 0 -4.5c0.5 -1.5 2 -3 4 -3Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="64;0"/></path><path stroke-dasharray="8" stroke-dashoffset="8" d="M20 4l-4 4"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.7s" dur="0.2s" values="8;0"/></path><path stroke-dasharray="6" stroke-dashoffset="6" d="M16 8h4M16 8v-4"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.9s" dur="0.2s" values="6;0"/></path></g></svg></p>
+          <div>
+            <p class="text-[#04162F] font-thin">Call</p>
+            <p class="text-[#04162F] font-thin">+234 8135100235</p>
           </div>
-          <div class="mb-4">
-            <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Email:</label>
-            <div class="flex items-center gap-3 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+        </div>
+        <div class="flex items-center gap-3 justify-center md:justify-start">
+          <p><svg class="text-3xl text-[#FC1414]" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4"><path d="M44 24v16.818C44 42.023 43.105 43 42 43H6c-1.105 0-2-.977-2-2.182V24l20 13z"/><path stroke-linecap="round" d="m4 23.784l10-6.892m30 6.892l-10-6.892"/><path d="M34 5H14v24.415a2 2 0 0 0 .91 1.677l8 5.2a2 2 0 0 0 2.18 0l8-5.2a2 2 0 0 0 .91-1.677z"/><path stroke-linecap="round" d="M20 13h4m-4 6h8"/></g></svg></p>
+          <div>
+            <p class="text-[#04162F] font-thin">Email</p>
+            <p class="text-[#04162F] font-thin">abbasyim1@gmail.com</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3 justify-center md:justify-start">
+          <p><svg class="text-3xl text-[#4583DA]" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18.5L9 17l-6 3V7l6-3l6 3l6-3v7.5M9 4v13m6-10v5.5m6.121 7.621a3 3 0 1 0-4.242 0Q17.506 20.749 19 22q1.577-1.335 2.121-1.879M19 18v.01"/></svg></p>
+          <div>
+            <p class="text-[#04162F] font-thin">Location</p>
+            <p class="text-[#04162F] font-thin">Bangalore, India</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="w-full md:w-1/2 max-w-md mx-auto p-4 bg-white rounded-md shadow-md">
+      <form id="contact">
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="name">Name:</label>
+          <div class="flex items-center gap-3 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+            <p><svg class="text-blue-200" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 12 12"><path fill="currentColor" d="M6 1a2 2 0 1 0 0 4a2 2 0 0 0 0-4M5 3a1 1 0 1 1 2 0a1 1 0 0 1-2 0m3.5 3h-5A1.5 1.5 0 0 0 2 7.5c0 1.116.459 2.01 1.212 2.615C3.953 10.71 4.947 11 6 11s2.047-.29 2.788-.885C9.54 9.51 10 8.616 10 7.5A1.5 1.5 0 0 0 8.5 6m-5 1h5a.5.5 0 0 1 .5.5c0 .817-.325 1.423-.838 1.835C7.636 9.757 6.88 10 6 10s-1.636-.243-2.162-.665C3.325 8.923 3 8.317 3 7.5a.5.5 0 0 1 .5-.5"/></svg></p>
+            <input class="w-full" id="name" type="text" placeholder="your name">
+          </div>
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Email:</label>
+          <div class="flex items-center gap-3 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
             <p><svg class="text-blue-200" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 6.5v8a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-10a2 2 0 0 0-2 2"/><path d="m5.5 7.5l5 3l5-3"/></g></svg></p>
-            <input class="" id="email" type="email" placeholder="your@email.com">
-            </div>
+            <input class="w-full" id="email" type="email" placeholder="your@email.com">
           </div>
-          <div class="mb-4">
-            <label class="block text-gray-700 text-sm font-bold mb-2" for="message">Message:</label>
-            <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="message" rows="5" cols="35" placeholder="Your Message"></textarea>
-          </div>
-          <button class="bg-[#04162F] hover:bg-blue-700 text-white font-bold py-4 px-[40px] rounded-full shadow-xl focus:outline-none focus:shadow-outline" type="submit">Message Us</button>
-        </form>
-      </div>
-    <!-- </div> -->
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="message">Message:</label>
+          <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="message" rows="5" placeholder="Your Message"></textarea>
+        </div>
+        <div class="text-center">
+          <button class="bg-[#04162F] hover:bg-blue-700 text-white font-bold py-4 px-[40px] rounded-full shadow-xl focus:outline-none focus:shadow-outline" type="submit">
+            Message Us
+          </button>
+        </div>
+      </form>
+    </div>
   </div>
 </section>
-<!-- contact end -->
 
 <!-- footer -->
-
 <footer class="bg-[#0295A9] p-[10px] pb-10">
-  <div><img src="./img-s/KIDS PARK (2).png" alt="" class="item-center align-middle absolute ml-[500px] mb-[300px]"></div>
-  <div class="flex items-center justify-around mt-[170px]">
-  <div class="leading-10">
-    <h2 class="text-[#04162F] text-xl">Stay up to date with <br> our story</h2>
-    <p class="text-white mb-3">Join and be the first to get the latest news <br> about trend, promotions, and much more</p>
-    <div class="border rounded-full">
-      <input type="text" class="bg-[transparent] p-1" placeholder="Enter your email address"> 
-      <button type="button" class="bg-white p-1 mb-1 pl-6 rounded-full pr-6 text-[#04162F] text-[10px]">join now</button>
+  <div class="container mx-auto px-4">
+    <div class="relative text-center mb-8 md:mb-0">
+      <img src="./img-s/KIDS PARK (2).png" alt="Kids Park Logo" class="mx-auto max-w-[200px] md:max-w-[300px]">
     </div>
-  </div>
-  <div>
-  <div class="font-mono">
-  <ul class="flex items-center justify-between gap-16">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#programs">Programs</a></li>
-    <li><a href="#why">Why Us</a></li>
-    <li><a href="#about">About Us</a></li>
-  </ul>
-  </div>
-  <div class="flex items-center align-middle gap-[120px] mt-5">
-    <div class="text-white font-mono leading-10">
-      <h3><a href="#">Our Programs</a></h3>
-      <p><a href="#">Preschool</a></p>
-      <p><a href="#">Kindergarten</a></p>
-      <p><a href="#">Pre-k For All</a></p>
+    
+    <div class="flex flex-col md:flex-row items-center justify-between mt-8 md:mt-[170px] space-y-8 md:space-y-0">
+      <div class="text-center md:text-left w-full md:w-1/3 leading-loose">
+        <h2 class="text-[#04162F] text-xl mb-4">Stay up to date with <br> our story</h2>
+        <p class="text-white mb-4">Join and be the first to get the latest news <br> about trend, promotions, and much more</p>
+        <div class="border rounded-full flex items-center max-w-md mx-auto md:mx-0">
+          <input type="text" class="bg-transparent p-2 flex-grow rounded-l-full" placeholder="Enter your email address"> 
+          <button type="button" class="bg-white p-2 rounded-full text-[#04162F] text-sm px-4">Join Now</button>
+        </div>
+      </div>
+      
+      <div class="w-full md:w-2/3">
+        <div class="font-mono text-center md:text-right mb-8">
+          <ul class="flex flex-wrap justify-center md:justify-end gap-4 md:gap-8">
+            <li><a href="#home" class="text-white hover:underline">Home</a></li>
+            <li><a href="#programs" class="text-white hover:underline">Programs</a></li>
+            <li><a href="#why" class="text-white hover:underline">Why Us</a></li>
+            <li><a href="#about" class="text-white hover:underline">About Us</a></li>
+          </ul>
+        </div>
+        
+        <div class="flex flex-col md:flex-row items-center justify-center md:justify-end gap-8 md:gap-16">
+          <div class="text-white font-mono text-center md:text-right leading-loose">
+            <h3 class="font-bold mb-2"><a href="#" class="hover:underline">Our Programs</a></h3>
+            <p><a href="#" class="hover:underline">Preschool</a></p>
+            <p><a href="#" class="hover:underline">Kindergarten</a></p>
+            <p><a href="#" class="hover:underline">Pre-k For All</a></p>
+          </div>
+          <div class="text-white font-mono text-center md:text-right leading-loose">
+            <h3 class="font-bold mb-2"><a href="#" class="hover:underline">Contact Us</a></h3>
+            <p><a href="#" class="hover:underline">Call Us</a></p>
+            <p><a href="#" class="hover:underline">Email Us</a></p>
+            <p><a href="#" class="hover:underline">Our Office</a></p>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="text-white font-mono leading-10">
-      <h3><a href="#">Contact Us</a></h3>
-      <p><a href="#">Call Us</a></p>
-      <p><a href="#">Email Us</a></p>
-      <p><a href="#">Our Office</a></p>
-    </div>
-  </div>
-  </div>
   </div>
 </footer>
 <!-- footer end -->
